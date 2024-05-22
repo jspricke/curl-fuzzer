@@ -78,6 +78,7 @@
 #define TLV_TYPE_CONNECT_ONLY			50
 #define TLV_TYPE_HSTS				51
 #define TLV_TYPE_HTTPPOSTBODY			52
+#define TLV_TYPE_ECH    			53
 
 /**
  * TLV function return codes.

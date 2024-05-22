@@ -233,6 +233,7 @@ int fuzz_parse_tlv(FUZZ_DATA *fuzz, TLV *tlv)
     FSINGLETONTLV(fuzz, TLV_TYPE_USERPWD, CURLOPT_USERPWD);
     FSINGLETONTLV(fuzz, TLV_TYPE_USERAGENT, CURLOPT_USERAGENT);
     FSINGLETONTLV(fuzz, TLV_TYPE_SSH_HOST_PUBLIC_KEY_SHA256, CURLOPT_SSH_HOST_PUBLIC_KEY_SHA256);
+    FSINGLETONTLV(fuzz, TLV_TYPE_ECH, CURLOPT_ECH);
 
     default:
       /* The fuzzer generates lots of unknown TLVs - we don't want these in the

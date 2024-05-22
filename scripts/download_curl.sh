@@ -4,5 +4,5 @@
 set -ex
 
 # Clone the curl repository to the specified directory.
-git clone http://github.com/curl/curl $1
+git clone http://github.com/defo-project/curl $1
 

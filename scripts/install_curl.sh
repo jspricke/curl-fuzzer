@@ -55,6 +55,7 @@ pushd ${SRCDIR}
             --enable-ipv6 \
             --enable-websockets \
             --without-libpsl \
+            --enable-ech \
             --with-random=/dev/null \
             ${SSLOPTION} \
             ${NGHTTPOPTION} \

@@ -61,6 +61,7 @@ def generate_corpus(options):
         enc.maybe_write_string(enc.TYPE_USERAGENT, options.useragent)
         enc.maybe_write_string(enc.TYPE_SSH_HOST_PUBLIC_KEY_SHA256, options.hostpksha256)
         enc.maybe_write_string(enc.TYPE_HSTS, options.hsts)
+        enc.maybe_write_string(enc.TYPE_ECH, options.ech)
 
         enc.maybe_write_u32(enc.TYPE_OPTHEADER, options.optheader)
         enc.maybe_write_u32(enc.TYPE_NOBODY, options.nobody)
@@ -154,6 +155,7 @@ def get_options():
     parser.add_argument("--connectonly", type=int)
     parser.add_argument("--post", action='store_true')
     parser.add_argument("--hsts")
+    parser.add_argument("--ech", type=str)
 
     upload1 = parser.add_mutually_exclusive_group()
     upload1.add_argument("--upload1")

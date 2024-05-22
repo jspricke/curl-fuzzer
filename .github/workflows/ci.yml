@@ -45,23 +45,8 @@ jobs:
     strategy:
       matrix:
         fuzzer:
-          - curl_fuzzer_bufq
-          - curl_fuzzer_dict
-          - curl_fuzzer_file
-          - curl_fuzzer_ftp
-          - curl_fuzzer_gopher
-          - curl_fuzzer_http
-          - curl_fuzzer_https
-          - curl_fuzzer_imap
-          - curl_fuzzer_mqtt
-          - curl_fuzzer_pop3
-          - curl_fuzzer_rtsp
-          - curl_fuzzer_smb
-          - curl_fuzzer_smtp
-          - curl_fuzzer_tftp
-          - curl_fuzzer_ws
-          - curl_fuzzer
           - fuzz_url
+          - fuzz_ech
     steps:
       - uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4
         with:
